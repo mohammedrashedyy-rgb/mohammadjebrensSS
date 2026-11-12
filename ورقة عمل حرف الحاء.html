@@ -1,0 +1,571 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>ورقة عمل حرف الحاء</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=Lalezar&display=swap">
+<style>
+/* Layout: one notebook-style page of five numbered exercises; sticker-like cards with hard offset shadows and big tappable Arabic letters. */
+:root{
+  --paper:#EAF6FA; --dot:#CFE3EC; --card:#FFFFFF; --well:#F3FAFD;
+  --ink:#1B2A4A; --muted:#51628A; --edge:#1B2A4A; --line:#CBDCE8;
+  --sun:#FFC83D; --coral:#FF6F59; --teal:#19B3A3; --sky:#4CA3FF; --grape:#A98BFF;
+  --good:#1B9A57; --bad:#E5484D;
+  --soft-sun:#FFF0BF; --soft-sky:#D9EEFC; --soft-good:#D8F4E3; --soft-bad:#FFE1DE;
+  --on-accent:#1B2A4A;
+  --font-display:'Lalezar','Cairo','Tahoma',sans-serif;
+  --font-body:'Cairo','Tahoma','Arial',sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#0F1830; --dot:#1A2748; --card:#182446; --well:#111C3A;
+    --ink:#EEF3FF; --muted:#A8B7D8; --edge:#4A5F99; --line:#33457A;
+    --coral:#FF8570; --teal:#2CC7B6; --sky:#6FB4FF;
+    --good:#4CD38A; --bad:#FF7A7F;
+    --soft-sun:#3B3218; --soft-sky:#1F3560; --soft-good:#14402B; --soft-bad:#4A2227;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0F1830; --dot:#1A2748; --card:#182446; --well:#111C3A;
+  --ink:#EEF3FF; --muted:#A8B7D8; --edge:#4A5F99; --line:#33457A;
+  --coral:#FF8570; --teal:#2CC7B6; --sky:#6FB4FF;
+  --good:#4CD38A; --bad:#FF7A7F;
+  --soft-sun:#3B3218; --soft-sky:#1F3560; --soft-good:#14402B; --soft-bad:#4A2227;
+  color-scheme:dark;
+}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  padding-left:max(16px,env(safe-area-inset-left,0px));
+  padding-right:max(16px,env(safe-area-inset-right,0px));
+  background-color:var(--paper);
+  background-image:radial-gradient(var(--dot) 1.6px,transparent 1.8px);
+  background-size:24px 24px;
+  color:var(--ink);
+  font-family:var(--font-body);
+  font-size:18px;
+  line-height:1.5;
+}
+button{font-family:inherit;color:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent}
+button:focus-visible,input:focus-visible{outline:4px solid var(--sky);outline-offset:3px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+.page{max-width:900px;margin:0 auto;padding-block:20px 48px;display:grid;gap:22px}
+
+/* hero */
+.hero{background:var(--card);border:3px solid var(--edge);border-radius:28px;box-shadow:0 6px 0 var(--edge);padding:18px;display:grid;gap:16px}
+.hero-top{display:flex;flex-wrap:wrap;gap:8px 14px;justify-content:space-between;align-items:center}
+.school{font-family:var(--font-display);font-size:1.4rem;line-height:1.3;background:var(--teal);color:var(--on-accent);padding:2px 18px 0;border-radius:999px;border:3px solid var(--edge)}
+.by{font-weight:700;color:var(--muted)}
+.hero-main{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.big-letter{width:112px;height:112px;flex:none;display:grid;place-items:center;padding-top:14px;background:var(--sun);color:var(--on-accent);border:3px solid var(--edge);border-radius:30px;box-shadow:0 5px 0 var(--edge);font-weight:900;font-size:92px;line-height:1;transform:rotate(-4deg)}
+.eyebrow{display:inline-block;margin:0 0 6px;padding:0 12px;border-radius:999px;background:var(--soft-sun);font-weight:700;font-size:.9rem}
+h1{margin:0;font-family:var(--font-display);font-weight:400;font-size:clamp(2.4rem,10vw,3.8rem);line-height:1.1}
+.sub{margin:0;color:var(--muted);font-weight:700}
+.student{display:flex;flex-wrap:wrap;align-items:center;gap:10px;font-weight:700}
+.student input{flex:1 1 200px;max-width:340px;min-width:0;border:3px solid var(--edge);border-radius:14px;background:var(--well);color:var(--ink);font:inherit;font-weight:600;padding:2px 14px}
+.progress{display:grid;gap:6px}
+.bar{height:18px;border:3px solid var(--edge);border-radius:999px;background:var(--soft-sky);overflow:hidden}
+.bar>i{display:block;height:100%;width:0;background:var(--sun);transition:width .4s}
+#bar-label{font-weight:700;font-size:.95rem;color:var(--muted)}
+
+/* sections */
+.sec{--c:var(--sun);background:var(--card);border:3px solid var(--edge);border-radius:26px;box-shadow:0 6px 0 var(--edge);padding:18px;display:grid;gap:16px}
+.s2{--c:var(--sky)} .s3{--c:var(--coral)} .s4{--c:var(--teal)} .s5{--c:var(--grape)}
+.sec-head{display:flex;align-items:center;gap:12px}
+.num{flex:none;width:48px;height:48px;border-radius:50%;background:var(--c);color:var(--on-accent);border:3px solid var(--edge);display:grid;place-items:center;font-family:var(--font-display);font-size:1.7rem;line-height:1;padding-top:5px}
+.sec h2{margin:0;font-family:var(--font-display);font-weight:400;font-size:clamp(1.25rem,4.6vw,1.7rem);line-height:1.25;text-wrap:balance}
+.hint{margin:2px 0 0;color:var(--muted);font-weight:600;font-size:.92rem;line-height:1.4}
+
+@keyframes shake{0%,100%{transform:translateX(0)}20%{transform:translateX(-7px)}40%{transform:translateX(7px)}60%{transform:translateX(-5px)}80%{transform:translateX(5px)}}
+.shake{animation:shake .4s}
+
+/* 1: complete the word */
+.pics{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.pic-card{border:3px solid var(--edge);border-radius:20px;padding:12px;display:grid;gap:10px;justify-items:center;background:var(--well);min-width:0}
+.pic-card svg{width:100%;max-width:168px;display:block;border-radius:18px;border:3px solid var(--edge)}
+.word-line{display:flex;align-items:center;gap:6px;font-weight:900;font-size:2rem;line-height:1.3}
+.slot{min-width:82px;height:58px;border:3px dashed var(--edge);border-radius:16px;background:var(--card);font-size:1.8rem;font-weight:900;display:grid;place-items:center;padding:0 10px}
+.slot.ok{border-style:solid;border-color:var(--good);background:var(--soft-good)}
+.slot.bad{border-style:solid;border-color:var(--bad);background:var(--soft-bad)}
+.reveal{min-height:2.4rem;font-family:var(--font-display);font-size:1.9rem;line-height:1.3;color:var(--good)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
+.chip{font-size:1.5rem;font-weight:900;line-height:1.4;padding:2px 18px;border-radius:14px;border:3px solid var(--edge);background:var(--soft-sun);box-shadow:0 4px 0 var(--edge);transition:transform .08s,box-shadow .08s}
+.chip:active:not(:disabled){transform:translateY(3px);box-shadow:0 1px 0 var(--edge)}
+.chip:disabled{opacity:.45;cursor:default}
+
+/* 2: match */
+.match{position:relative;display:grid;grid-template-columns:minmax(0,1.45fr) minmax(0,1fr);column-gap:clamp(36px,9vw,80px)}
+.match .col{display:grid;grid-template-rows:repeat(3,68px);gap:14px}
+.lines{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;overflow:visible}
+.strip,.oval{border:3px solid var(--edge);transition:background .2s,border-color .2s}
+.strip{display:flex;gap:4px;align-items:center;justify-content:center;padding:6px;border-radius:16px;background:var(--well)}
+.lt{min-width:30px;height:44px;display:grid;place-items:center;background:var(--card);border:2px solid var(--edge);border-radius:8px;font-weight:900;font-size:1.3rem;line-height:1;padding:6px 2px 0}
+.oval{border-radius:999px;background:var(--soft-sun);font-size:clamp(1.3rem,5.6vw,1.7rem);font-weight:900;line-height:1;padding:10px 8px 4px}
+.strip[aria-pressed="true"],.oval[aria-pressed="true"]{outline:4px solid var(--sky);outline-offset:2px}
+.strip.matched,.oval.matched{border-color:var(--pc);background:color-mix(in srgb,var(--pc) 24%,var(--card));cursor:default}
+
+/* 3: colour */
+.palette{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.swatch{width:44px;height:44px;border-radius:50%;border:3px solid var(--edge);background:var(--sw);padding:0}
+.swatch[aria-pressed="true"]{outline:4px solid var(--ink);outline-offset:2px}
+.paint-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:12px}
+.paintable{border:3px solid var(--edge);border-radius:18px;background:var(--well);padding:6px;display:grid;place-items:center}
+.paintable svg{width:100%;max-width:150px;height:auto;display:block}
+.gl{font-family:var(--font-body);font-weight:900;stroke:var(--ink);stroke-width:8;stroke-linejoin:round;paint-order:stroke fill;fill:var(--paint,var(--card));transition:fill .15s}
+
+/* 4: build and read */
+.build{display:grid;gap:14px}
+.build-row{border:3px solid var(--edge);border-radius:20px;background:var(--well);padding:12px;display:grid;gap:12px}
+.eq-line{display:flex;flex-wrap:wrap;align-items:center;gap:10px;justify-content:center;font-weight:900;font-size:2rem;line-height:1.3}
+.tile{min-width:72px;height:60px;padding:6px 14px 0;display:grid;place-items:center;border:3px solid var(--edge);border-radius:16px;background:var(--card);box-shadow:0 4px 0 var(--edge)}
+.tile.base{background:var(--soft-sun)}
+.tile.res{border-style:dashed;box-shadow:none;min-width:110px}
+.tile.res.ok{border-style:solid;border-color:var(--good);background:var(--soft-good)}
+.tile.res.bad{border-style:solid;border-color:var(--bad);background:var(--soft-bad)}
+.op{color:var(--muted)}
+.speak{width:48px;height:48px;border-radius:50%;border:3px solid var(--edge);background:var(--teal);color:var(--on-accent);display:grid;place-items:center;padding:0}
+.speak svg{width:24px;height:24px}
+
+/* 5: odd one out */
+.odd-rows{display:grid;gap:12px}
+.odd-row{display:flex;justify-content:space-around;align-items:center;gap:6px;border:3px solid var(--edge);border-radius:20px;padding:10px 6px;background:var(--well)}
+.wd{font-size:clamp(1.4rem,6vw,1.85rem);font-weight:900;line-height:1.2;padding:8px 12px 4px;border:4px solid transparent;border-radius:50%;background:transparent;min-width:0}
+.wd.circled{border-color:var(--good);background:var(--soft-good);padding-inline:18px}
+.wd.nope{background:var(--soft-bad)}
+.wd:disabled:not(.circled){opacity:.5;cursor:default}
+
+/* finale */
+.finale{position:relative;overflow:hidden;text-align:center;background:var(--soft-sun);border:3px solid var(--edge);border-radius:26px;box-shadow:0 6px 0 var(--edge);padding:22px 16px;display:grid;gap:8px;justify-items:center}
+.finale.done{background:var(--soft-good)}
+.finale h2{margin:0;font-family:var(--font-display);font-weight:400;font-size:clamp(1.4rem,5vw,1.9rem);line-height:1.3}
+.finale p{margin:0;font-weight:600}
+.stars{display:flex;gap:6px}
+.star{width:44px;height:44px;fill:var(--line);stroke:var(--edge);stroke-width:1.3;stroke-linejoin:round;transition:fill .3s}
+.star.lit{fill:var(--sun)}
+.btn{margin-top:6px;font-size:1.1rem;font-weight:900;line-height:1.4;padding:4px 22px;border-radius:14px;border:3px solid var(--edge);background:var(--card);box-shadow:0 4px 0 var(--edge)}
+.btn:active{transform:translateY(3px);box-shadow:0 1px 0 var(--edge)}
+.confetti{position:absolute;top:-16px;width:10px;height:16px;border-radius:3px;animation:fall 1.9s ease-in forwards}
+@keyframes fall{to{transform:translateY(300px) rotate(540deg);opacity:0}}
+
+.credit{text-align:center;color:var(--muted);font-weight:700;font-size:.95rem;margin:0}
+
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+
+<main class="page" dir="rtl" lang="ar">
+  <header class="hero">
+    <div class="hero-top">
+      <span class="school">مدرسة ذكور زيف</span>
+      <span class="by">إعداد المعلم: محمد جبريل</span>
+    </div>
+    <div class="hero-main">
+      <div class="big-letter" aria-hidden="true">ح</div>
+      <div>
+        <p class="eyebrow">ورقة عمل (٢) · الدرس الثامن</p>
+        <h1>حرف الحاء</h1>
+        <p class="sub">لغة عربية – الصف الأول</p>
+      </div>
+    </div>
+    <label class="student">اسم الطالب:
+      <input id="student-name" type="text" maxlength="30" placeholder="اكتب اسمك هنا" autocomplete="off">
+    </label>
+    <div class="progress">
+      <div class="bar" id="bar" role="progressbar" aria-valuemin="0" aria-valuemax="16" aria-valuenow="0" aria-label="التقدم"><i id="bar-fill"></i></div>
+      <span id="bar-label"></span>
+    </div>
+  </header>
+
+  <section class="sec s1">
+    <div class="sec-head">
+      <span class="num" aria-hidden="true">١</span>
+      <div>
+        <h2>نُكمل الكلمة بالحرف أو المقطع المناسب</h2>
+        <p class="hint">اختر من: حو – حي – حا</p>
+      </div>
+    </div>
+    <div class="pics" id="s1"></div>
+  </section>
+
+  <section class="sec s2">
+    <div class="sec-head">
+      <span class="num" aria-hidden="true">٢</span>
+      <div>
+        <h2>نصل الكلمة المحللة مع ما يناسبها من الكلمات المركبة</h2>
+        <p class="hint">اضغط على الحروف، ثم اضغط على الكلمة المناسبة</p>
+      </div>
+    </div>
+    <div class="match" id="match"></div>
+  </section>
+
+  <section class="sec s3">
+    <div class="sec-head">
+      <span class="num" aria-hidden="true">٣</span>
+      <div>
+        <h2>نُلوّن المقاطع والحروف</h2>
+        <p class="hint">اختر لوناً، ثم اضغط على الحرف لتلوينه. اضغط مرة ثانية لتمسح اللون.</p>
+      </div>
+    </div>
+    <div class="palette" id="palette" role="group" aria-label="الألوان"></div>
+    <div class="paint-grid" id="paint"></div>
+  </section>
+
+  <section class="sec s4">
+    <div class="sec-head">
+      <span class="num" aria-hidden="true">٤</span>
+      <div>
+        <h2>نركّب ونقرأ</h2>
+        <p class="hint">ركّب المقطع (حا) مع المقطع الثاني، ثم اختر الكلمة الصحيحة</p>
+      </div>
+    </div>
+    <div class="build" id="build"></div>
+  </section>
+
+  <section class="sec s5">
+    <div class="sec-head">
+      <span class="num" aria-hidden="true">٥</span>
+      <div>
+        <h2>نضع دائرة حول الكلمة المخالفة</h2>
+        <p class="hint">في كل سطر كلمة تختلف عن أختيها. اضغط عليها.</p>
+      </div>
+    </div>
+    <div class="odd-rows" id="odd"></div>
+  </section>
+
+  <section class="finale" id="finale" aria-live="polite">
+    <div class="stars" aria-hidden="true">
+      <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 .8-5.2 4.8 1.5 7L12 17.8 5.7 21.1l1.5-7L2 9.3l7-.8z"/></svg>
+      <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 .8-5.2 4.8 1.5 7L12 17.8 5.7 21.1l1.5-7L2 9.3l7-.8z"/></svg>
+      <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 .8-5.2 4.8 1.5 7L12 17.8 5.7 21.1l1.5-7L2 9.3l7-.8z"/></svg>
+    </div>
+    <h2 id="fin-title"></h2>
+    <p id="fin-text"></p>
+    <button class="btn" id="reset" type="button">ابدأ من جديد</button>
+  </section>
+
+  <p class="credit">مدرسة ذكور زيف · إعداد المعلم محمد جبريل</p>
+  <div class="sr" id="live" aria-live="polite"></div>
+</main>
+
+<script>
+(function(){
+  var TOTAL = 16;
+  var done = new Set();
+  var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var AR = function(n){ return String(n).replace(/\d/g, function(d){ return '٠١٢٣٤٥٦٧٨٩'[d]; }); };
+  var $ = function(s, r){ return (r || document).querySelector(s); };
+  var el = function(tag, cls, html){
+    var e = document.createElement(tag);
+    if (cls) e.className = cls;
+    if (html != null) e.innerHTML = html;
+    return e;
+  };
+  function shake(e){ e.classList.remove('shake'); void e.offsetWidth; e.classList.add('shake'); }
+  function say(t){ $('#live').textContent = t; }
+  var canSpeak = 'speechSynthesis' in window && 'SpeechSynthesisUtterance' in window;
+  function speak(t){
+    try{
+      var u = new SpeechSynthesisUtterance(t);
+      u.lang = 'ar-SA'; u.rate = 0.8;
+      speechSynthesis.cancel(); speechSynthesis.speak(u);
+    }catch(e){}
+  }
+  var SPEAKER = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9v6h4l5 4V5L8 9z" fill="currentColor"/><path d="M16.5 8.5a5 5 0 010 7M19 6a8.5 8.5 0 010 12"/></svg>';
+
+  function mark(id){ if (!done.has(id)){ done.add(id); progress(); } }
+  function unmark(id){ if (done.has(id)){ done.delete(id); progress(); } }
+
+  function progress(){
+    var n = done.size, all = n === TOTAL;
+    $('#bar-fill').style.width = (n / TOTAL * 100) + '%';
+    $('#bar').setAttribute('aria-valuenow', n);
+    $('#bar-label').textContent = 'أنجزت ' + AR(n) + ' من ' + AR(TOTAL) + ' تمريناً';
+    var f = $('#finale'), was = f.classList.contains('done');
+    f.classList.toggle('done', all);
+    var lit = all ? 3 : Math.floor(n * 3 / TOTAL);
+    f.querySelectorAll('.star').forEach(function(s, i){ s.classList.toggle('lit', i < lit); });
+    if (all){
+      var name = $('#student-name').value.trim();
+      $('#fin-title').textContent = 'أحسنت يا ' + (name || 'بطل') + '!';
+      $('#fin-text').textContent = 'أنهيت ورقة عمل حرف الحاء كاملة.';
+      if (!was) confetti();
+    } else {
+      $('#fin-title').textContent = 'أكمل التمارين لتحصل على النجوم';
+      $('#fin-text').textContent = 'بقي ' + AR(TOTAL - n) + ' من ' + AR(TOTAL) + ' تمريناً.';
+    }
+  }
+  function confetti(){
+    if (reduce) return;
+    var f = $('#finale'), cols = ['#FFC83D','#FF6F59','#19B3A3','#4CA3FF','#A98BFF'];
+    for (var i = 0; i < 26; i++){
+      var c = el('i', 'confetti');
+      c.style.left = (Math.random() * 100) + '%';
+      c.style.background = cols[i % 5];
+      c.style.animationDelay = (Math.random() * 0.5) + 's';
+      f.appendChild(c);
+      (function(x){ setTimeout(function(){ x.remove(); }, 2700); })(c);
+    }
+  }
+
+  /* ---------- artwork (original cartoon drawings) ---------- */
+  var K = '#1B2A4A';
+  function face(){
+    return '<circle cx="58" cy="66" r="4.5" fill="'+K+'"/><circle cx="82" cy="66" r="4.5" fill="'+K+'"/>' +
+           '<path d="M58 80q12 10 24 0" fill="none" stroke="'+K+'" stroke-width="4" stroke-linecap="round"/>' +
+           '<circle cx="50" cy="76" r="5" fill="#FF8FA3" opacity=".6"/><circle cx="90" cy="76" r="5" fill="#FF8FA3" opacity=".6"/>';
+  }
+  function body(color){
+    return '<path d="M26 140C26 112 48 102 70 102s44 10 44 38z" fill="'+color+'" stroke="'+K+'" stroke-width="4" stroke-linejoin="round"/>' +
+           '<rect x="60" y="86" width="20" height="20" rx="7" fill="#F2B48A" stroke="'+K+'" stroke-width="4"/>';
+  }
+  function whale(){
+    return '<path d="M94 80C106 76 112 66 110 52C118 60 128 62 134 58C132 74 122 84 106 92Z" fill="#3F6FD0" stroke="'+K+'" stroke-width="4" stroke-linejoin="round"/>' +
+           '<path d="M14 84C14 58 44 46 72 54C92 60 102 76 98 86C94 96 70 102 50 100C30 98 14 94 14 84Z" fill="#4A7FE0" stroke="'+K+'" stroke-width="4" stroke-linejoin="round"/>' +
+           '<path d="M20 90C32 98 62 100 90 91C72 104 30 103 20 90Z" fill="#E8F4FF"/>' +
+           '<circle cx="34" cy="76" r="4.5" fill="'+K+'"/>' +
+           '<path d="M40 48c0-8-6-12-10-14M40 48c0-8 6-12 10-14" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/>';
+  }
+  var ART = {
+    boy: '<svg viewBox="0 0 140 140" role="img" aria-label="رسم ولد"><rect width="140" height="140" fill="#CFEAFB"/>' + body('#FFC83D') +
+         '<circle cx="36" cy="66" r="7" fill="#F7C9A0" stroke="'+K+'" stroke-width="4"/><circle cx="104" cy="66" r="7" fill="#F7C9A0" stroke="'+K+'" stroke-width="4"/>' +
+         '<circle cx="70" cy="62" r="33" fill="#F7C9A0" stroke="'+K+'" stroke-width="4"/>' +
+         '<path d="M37 58C33 30 58 22 76 26c22 4 31 20 27 34-8-12-22-16-38-14-12 2-21 6-28 12z" fill="#5B3A29" stroke="'+K+'" stroke-width="4" stroke-linejoin="round"/>' + face() + '</svg>',
+    girl: '<svg viewBox="0 0 140 140" role="img" aria-label="رسم بنت"><rect width="140" height="140" fill="#FFE7D9"/>' + body('#FF8570') +
+         '<circle cx="28" cy="66" r="16" fill="#F7C948" stroke="'+K+'" stroke-width="4"/><circle cx="112" cy="66" r="16" fill="#F7C948" stroke="'+K+'" stroke-width="4"/>' +
+         '<circle cx="70" cy="62" r="33" fill="#F7C9A0" stroke="'+K+'" stroke-width="4"/>' +
+         '<path d="M37 60C34 32 54 24 70 24s36 8 33 36c-6-14-18-20-33-20S43 46 37 60z" fill="#F7C948" stroke="'+K+'" stroke-width="4" stroke-linejoin="round"/>' +
+         '<path d="M27 50l-11-7v14zM27 50l11-7v14z" fill="#E5484D" stroke="'+K+'" stroke-width="3" stroke-linejoin="round"/>' +
+         '<path d="M113 50l-11-7v14zM113 50l11-7v14z" fill="#E5484D" stroke="'+K+'" stroke-width="3" stroke-linejoin="round"/>' + face() + '</svg>',
+    whales: '<svg viewBox="0 0 140 140" role="img" aria-label="رسم حيتان"><rect width="140" height="140" fill="#BFE3FF"/>' +
+         '<g transform="translate(58 38) scale(.5)">' + whale() + '</g>' +
+         '<g transform="translate(-2 6) scale(.9)">' + whale() + '</g>' +
+         '<path d="M-4 112q17-10 35 0t35 0 35 0 39 0V144H-4z" fill="#6FB4FF" stroke="'+K+'" stroke-width="4"/></svg>'
+  };
+
+  /* ---------- 1: complete the word ---------- */
+  var S1 = [
+    { art:'boy',    tail:'ـمد',  ans:'حا', full:'حامد' },
+    { art:'girl',   tail:'ـر',   ans:'حو', full:'حور' },
+    { art:'whales', tail:'ـتان', ans:'حي', full:'حيتان' }
+  ];
+  function build1(){
+    var box = $('#s1'); box.innerHTML = '';
+    S1.forEach(function(it, i){
+      var card = el('article', 'pic-card');
+      card.innerHTML = '<div>' + ART[it.art] + '</div>' +
+        '<div class="word-line"><span class="slot" aria-label="مكان الجواب">؟</span><span>' + it.tail + '</span></div>' +
+        '<div class="reveal" aria-live="polite"></div><div class="chips"></div>';
+      var slot = $('.slot', card), rev = $('.reveal', card), chips = $('.chips', card);
+      ['حو','حي','حا'].forEach(function(v){
+        var b = el('button', 'chip', v); b.type = 'button';
+        b.addEventListener('click', function(){
+          if (card.classList.contains('solved')) return;
+          slot.textContent = v;
+          if (v === it.ans){
+            slot.className = 'slot ok'; card.classList.add('solved');
+            rev.textContent = it.full;
+            chips.querySelectorAll('.chip').forEach(function(c){ c.disabled = true; });
+            say('إجابة صحيحة: ' + it.full);
+            mark('s1-' + i);
+          } else {
+            slot.classList.add('bad'); shake(slot); say('حاول مرة أخرى');
+            setTimeout(function(){ if (!card.classList.contains('solved')){ slot.className = 'slot'; slot.textContent = '؟'; } }, 800);
+          }
+        });
+        chips.appendChild(b);
+      });
+      box.appendChild(card);
+    });
+  }
+
+  /* ---------- 2: match broken-down words with whole words ---------- */
+  var S2 = [
+    { w:'حامد',  letters:['حـ','ا','مـ','د'] },
+    { w:'حيتان', letters:['حـ','يـ','تـ','ا','ن'] },
+    { w:'حور',   letters:['حـ','و','ر'] }
+  ];
+  var OVALS = ['حور','حامد','حيتان'];
+  var PAIR_COLORS = ['var(--coral)','var(--sky)','var(--teal)'];
+  var pairs = [];
+  function drawLines(){
+    var c = $('#match'), svg = $('.lines', c);
+    if (!svg) return;
+    svg.innerHTML = '';
+    var cr = c.getBoundingClientRect();
+    svg.setAttribute('viewBox', '0 0 ' + cr.width + ' ' + cr.height);
+    pairs.forEach(function(p){
+      var a = p.strip.getBoundingClientRect(), b = p.oval.getBoundingClientRect();
+      var ln = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+      ln.setAttribute('x1', a.left - cr.left);
+      ln.setAttribute('y1', a.top + a.height / 2 - cr.top);
+      ln.setAttribute('x2', b.right - cr.left);
+      ln.setAttribute('y2', b.top + b.height / 2 - cr.top);
+      ln.setAttribute('stroke-width', '6');
+      ln.setAttribute('stroke-linecap', 'round');
+      ln.style.stroke = p.color;
+      svg.appendChild(ln);
+    });
+  }
+  function build2(){
+    var box = $('#match');
+    box.innerHTML = '<svg class="lines" aria-hidden="true"></svg>';
+    pairs = [];
+    var colA = el('div', 'col'), colB = el('div', 'col');
+    box.appendChild(colA); box.appendChild(colB);
+    var sel = null;
+    function clearSel(){ if (sel){ sel.el.setAttribute('aria-pressed', 'false'); sel = null; } }
+    function pick(type, word, node){
+      if (node.classList.contains('matched')) return;
+      if (!sel || sel.type === type){
+        clearSel(); sel = { type: type, word: word, el: node };
+        node.setAttribute('aria-pressed', 'true');
+        return;
+      }
+      var strip = type === 'strip' ? node : sel.el, oval = type === 'oval' ? node : sel.el;
+      if (sel.word === word){
+        var color = PAIR_COLORS[pairs.length % PAIR_COLORS.length];
+        [strip, oval].forEach(function(n){ n.classList.add('matched'); n.style.setProperty('--pc', color); n.disabled = true; });
+        pairs.push({ strip: strip, oval: oval, color: color });
+        clearSel(); drawLines(); say('وصلت الكلمة: ' + word);
+        mark('s2-' + word);
+      } else {
+        shake(strip); shake(oval); say('حاول مرة أخرى'); clearSel();
+      }
+    }
+    S2.forEach(function(it){
+      var b = el('button', 'strip'); b.type = 'button';
+      b.setAttribute('aria-pressed', 'false');
+      b.setAttribute('aria-label', 'حروف الكلمة المحللة: ' + it.letters.join(' '));
+      b.innerHTML = it.letters.map(function(l){ return '<span class="lt">' + l + '</span>'; }).join('');
+      b.addEventListener('click', function(){ pick('strip', it.w, b); });
+      colA.appendChild(b);
+    });
+    OVALS.forEach(function(w){
+      var b = el('button', 'oval', w); b.type = 'button';
+      b.setAttribute('aria-pressed', 'false');
+      b.addEventListener('click', function(){ pick('oval', w, b); });
+      colB.appendChild(b);
+    });
+  }
+
+  /* ---------- 3: colour the syllables and letters ---------- */
+  var S3 = ['حا','حو','حي','ـحـ','ح'];
+  var COLORS = [
+    ['#FF6F59','أحمر'], ['#FFC83D','أصفر'], ['#4CC774','أخضر'],
+    ['#4CA3FF','أزرق'], ['#A98BFF','بنفسجي'], ['#FF8FB8','وردي']
+  ];
+  var cur = COLORS[0][0];
+  function build3(){
+    var pal = $('#palette'), grid = $('#paint');
+    pal.innerHTML = ''; grid.innerHTML = '';
+    cur = COLORS[0][0];
+    COLORS.forEach(function(c, i){
+      var b = el('button', 'swatch'); b.type = 'button';
+      b.style.setProperty('--sw', c[0]);
+      b.setAttribute('aria-label', c[1]);
+      b.setAttribute('aria-pressed', i === 0 ? 'true' : 'false');
+      b.addEventListener('click', function(){
+        cur = c[0];
+        pal.querySelectorAll('.swatch').forEach(function(s){ s.setAttribute('aria-pressed', s === b ? 'true' : 'false'); });
+      });
+      pal.appendChild(b);
+    });
+    S3.forEach(function(t, i){
+      var b = el('button', 'paintable'); b.type = 'button';
+      b.setAttribute('aria-label', 'لَوِّن: ' + t);
+      b.innerHTML = '<svg viewBox="0 0 160 170" aria-hidden="true"><text class="gl" x="80" y="92" text-anchor="middle" font-size="110">' + t + '</text></svg>';
+      var gl = $('.gl', b), painted = null;
+      b.addEventListener('click', function(){
+        if (painted === cur){ painted = null; gl.style.removeProperty('--paint'); unmark('s3-' + i); }
+        else { painted = cur; gl.style.setProperty('--paint', cur); mark('s3-' + i); }
+      });
+      grid.appendChild(b);
+    });
+  }
+
+  /* ---------- 4: build and read ---------- */
+  var S4 = [
+    { base:'حا', part:'مِد', ans:'حامِد', opts:['حاصِد','حامِد','حازِم'] },
+    { base:'حا', part:'زِم', ans:'حازِم', opts:['حامِد','حاتِم','حازِم'] }
+  ];
+  function build4(){
+    var box = $('#build'); box.innerHTML = '';
+    S4.forEach(function(it, i){
+      var row = el('div', 'build-row');
+      row.innerHTML = '<div class="eq-line"><span class="tile base">' + it.base + '</span><span class="op">+</span>' +
+        '<span class="tile">' + it.part + '</span><span class="op">=</span>' +
+        '<span class="tile res" aria-live="polite">؟</span>' +
+        '<button class="speak" type="button" aria-label="استمع إلى الكلمة" hidden>' + SPEAKER + '</button></div>' +
+        '<div class="chips"></div>';
+      var res = $('.res', row), chips = $('.chips', row), sp = $('.speak', row);
+      sp.addEventListener('click', function(){ speak(it.ans); });
+      it.opts.forEach(function(w){
+        var b = el('button', 'chip', w); b.type = 'button';
+        b.addEventListener('click', function(){
+          if (row.classList.contains('solved')) return;
+          res.textContent = w;
+          if (w === it.ans){
+            res.className = 'tile res ok'; row.classList.add('solved');
+            chips.querySelectorAll('.chip').forEach(function(c){ c.disabled = true; });
+            if (canSpeak) sp.hidden = false;
+            say('إجابة صحيحة: ' + w);
+            mark('s4-' + i);
+          } else {
+            res.classList.add('bad'); shake(res); say('حاول مرة أخرى');
+            setTimeout(function(){ if (!row.classList.contains('solved')){ res.className = 'tile res'; res.textContent = '؟'; } }, 800);
+          }
+        });
+        chips.appendChild(b);
+      });
+      box.appendChild(row);
+    });
+  }
+
+  /* ---------- 5: circle the odd word ---------- */
+  var S5 = [
+    { words:['حامد','حاصد','حامد'], odd:1 },
+    { words:['حور','حور','خور'],   odd:2 },
+    { words:['ختان','حيتان','حيتان'], odd:0 }
+  ];
+  function build5(){
+    var box = $('#odd'); box.innerHTML = '';
+    S5.forEach(function(r, i){
+      var row = el('div', 'odd-row');
+      r.words.forEach(function(w, j){
+        var b = el('button', 'wd', w); b.type = 'button';
+        b.addEventListener('click', function(){
+          if (row.classList.contains('solved')) return;
+          if (j === r.odd){
+            b.classList.add('circled'); row.classList.add('solved');
+            row.querySelectorAll('.wd').forEach(function(x){ x.disabled = true; });
+            say('أحسنت، هذه هي الكلمة المخالفة');
+            mark('s5-' + i);
+          } else {
+            b.classList.add('nope'); shake(b); say('حاول مرة أخرى');
+            setTimeout(function(){ b.classList.remove('nope'); }, 600);
+          }
+        });
+        row.appendChild(b);
+      });
+      box.appendChild(row);
+    });
+  }
+
+  function init(){
+    done.clear();
+    build1(); build2(); build3(); build4(); build5();
+    progress();
+    requestAnimationFrame(drawLines);
+  }
+  $('#reset').addEventListener('click', init);
+  window.addEventListener('resize', drawLines);
+  if (window.ResizeObserver){ new ResizeObserver(drawLines).observe($('#match')); }
+  if (document.fonts && document.fonts.ready){ document.fonts.ready.then(drawLines); }
+  init();
+})();
+</script>
+
+</body></html>
